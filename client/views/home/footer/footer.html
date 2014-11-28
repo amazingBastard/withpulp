@@ -1,0 +1,28 @@
+<template name="footer">
+  <footer class="center aligned {{isActive}} header-wrapper">
+    <h1 class="huge center aligned ui header">
+      Do you want more traffic?
+      <div class="sub header">
+        Looks like a business in Astoria, New York needs our attention! Is this you?
+      </div>
+    </h1>
+    <button class="basic ui resize icon button"><i class="{{iconClass}} icon"></i></button>
+    {{#if showLogin}}
+    <div class="login-wrapper {{animateClass}} animated">
+      {{#if currentUser}}
+      <div class="actions-wrapper">
+        {{#if currentUser.username}}
+        <div class="hello">Hi {{currentUser.username}}!</div>
+        {{/if}}
+        <div class="ui fluid purple log-out button">
+          <i class="sign out icon"></i>
+          Log out
+        </div>
+      </div>
+      {{else}}
+      {{> atForm }}
+      {{/if}}
+    </div>
+    {{/if}}
+  </footer>
+</template>

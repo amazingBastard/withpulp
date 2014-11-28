@@ -1,0 +1,14 @@
+<template name="homeSection">
+  <section class="home-section">
+    <div class="center aligned view-title">
+      <h2 class="huge center aligned ui header">
+        {{#each header}}
+          <span>{{copy}}</span>
+        {{/each}}
+      </h2>
+    </div>
+    <div class="ui stackable page section-content grid" id="{{template}}">
+      {{> UI.dynamic template=template}}
+    </div>
+  </section>
+</template>

@@ -1,0 +1,15 @@
+<template name="contact">
+  <div class="middle aligned row contact header">
+    <div class="column">
+      <h2>
+        <span class="label">{{content.label}}</span>
+      </h2>
+      <p><strong>{{content.intro}}</strong> {{content.hook}}</p>
+    </div>
+  </div>
+  <div class="six column row contact content">
+    {{#each content.blocks}}
+      {{> contactBlock}}
+    {{/each}}
+  </div>
+</template>

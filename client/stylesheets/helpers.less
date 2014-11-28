@@ -1,0 +1,70 @@
+@import 'variables';
+@import 'lib/elements';
+
+/* -------------------
+    Helper styles
+   ------------------- */
+
+.hidden {
+  display: none;
+}
+
+.hidden-mobile {
+  display: block;
+}
+
+.visible-mobile {
+  display: none;
+}
+
+@media (max-width: @phoneWidth) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  .visible-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: @tabletWidth) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  .visible-mobile {
+    display: block;
+  }
+}
+
+.padding-wrapper {
+  padding: 20px;
+}
+
+.aligned {
+  &.center {
+    text-align: center;
+  }
+
+  &.left {
+    text-align: left;
+  }
+
+  &.right {
+    text-align: right;
+  }
+}
+
+.link {
+  &.unstyled {
+    color: inherit;
+  }
+
+  &.no-underline {
+    text-decoration: none;
+  }
+
+  &.no-hover-styles:hover {
+    color: inherit;
+  }
+}

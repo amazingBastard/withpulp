@@ -1,0 +1,22 @@
+<template name="missionBlock">
+  <section class="block column">
+    <div class="ui two column stackable grid">
+      <div class="middle aligned row">
+        <div class="column">
+          <h3 class="large ui header">
+            {{title}}
+          </h3>
+          <div class="center aligned icon-wrapper">
+            <i class="visible-mobile {{icon}}"></i>
+          </div>
+          <p>{{lead}}</p>
+        </div>
+        <div class="center aligned column">
+          <div class="center aligned icon-wrapper">
+            <i class="hidden-mobile {{icon}}"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

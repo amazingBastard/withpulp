@@ -1,0 +1,15 @@
+<template name="heroes">
+  <div class="middle aligned row heroes header">
+    <div class="column">
+      <h2>
+        <span class="label">{{content.label}}</span>
+      </h2>
+      <p><strong>{{content.intro}}</strong></p>
+    </div>
+  </div>
+  <div class="four column row heroes content">
+    {{#each content.blocks}}
+      {{> heroBlock}}
+    {{/each}}
+  </div>
+</template>
