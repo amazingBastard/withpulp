@@ -1,11 +1,17 @@
 <template name="heroBlock">
   <section class="block column">
-    <div class="ui slide down instant reveal">
-      <div class="visible content">
-        <img src="{{avatar}}" class="ui small bordered image">
+    <div class="ui fluid slide down instant reveal card">
+      <div class="image">
+        <img src="{{avatar.desktop}}" class="hidden-mobile avatar">
+        <img src="{{avatar.mobile}}" class="visible-mobile avatar">
       </div>
-      <div class="hidden content">
-        <img src="{{avatar}}" class="ui small bordered image">
+      <div class="content">
+        <h2 class="header">
+          {{name}}
+          <small>
+            {{title}}
+          </small>
+        </h2>
       </div>
     </div>
   </section>

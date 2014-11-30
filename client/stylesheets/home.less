@@ -11,7 +11,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 1;
+      z-index: 2;
       width: 100%;
       height: 100vh;
       background: @voidBackground;
@@ -34,8 +34,8 @@
     /* main */
     .home-main {
       position: relative;
-      z-index: 2;
-      margin-top: 100vh;
+      z-index: 4;
+      margin: 100vh 0;
       background: @contentBackground;
 
       .home-section {
@@ -91,8 +91,13 @@
               }
 
               .icon-wrapper {
+
                 i.fa {
                   font-size: 10em;
+                }
+
+                i.visible-mobile.fa {
+                  padding: 10% 0;
                 }
               }
 
@@ -109,6 +114,57 @@
 
               .center.aligned.column {
                 float: left;
+              }
+            }
+          }
+
+          @media (min-width: @mediumDesktopWidth) {
+            .heroes.content {
+
+              .block {
+                padding: 0 !important;
+
+                .card {
+                  padding: 5px;
+                  transform: skew(-5deg);
+                  -o-transform: skew(-5deg);
+                  -moz-transform: skew(-5deg);
+                  -webkit-transform: skew(-5deg);
+                  -webkit-backface-visibility: hidden;
+
+                  .image {
+
+                    .avatar {
+                      width: 90%;
+                      border: 3px inset @primaryFontColor;
+                      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+                      filter: gray;
+                      -webkit-filter: grayscale(.9);
+                      -moz-box-shadow: -5px 5px 10px -5px #000;
+                      -webkit-box-shadow: -5px 5px 10px -5px #000;
+                      box-shadow: -5px 5px 10px -5px #000;
+                      transition: all 150ms ease-out;
+                    }
+                  }
+                }
+
+                .card:hover,
+                .card:focus {
+                  bottom: 20px;
+                  right: 10px;
+
+                  .avatar,
+                  .avatar {
+                    width: 95%;
+                    border: #3f324d inset 6px;
+                    filter: none;
+                    -webkit-filter: grayscale(0);
+                    -webkit-box-shadow: -10px 15px 10px -10px #000000;
+                    -moz-box-shadow: -10px 15px 10px -10px #000000;
+                    box-shadow: -10px 15px 10px -10px #000000;
+                    transition: all 150ms ease-out;
+                  }
+                }
               }
             }
           }
@@ -130,7 +186,39 @@
             .content {
 
               .block {
-                padding: 0 !important;
+                padding: 4% 0 !important;
+              }
+            }
+
+            .heroes.content {
+
+              .block {
+                padding: 4% !important;
+
+                .card {
+                  border: 5px solid;
+
+                  .avatar {
+                    width: 100%;
+                  }
+
+                  .content {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background: rgba(254, 235, 127, 0.9);
+                    border-top: 5px solid;
+
+                    .header {
+
+                      small {
+                        display: block;
+                        font-weight: 300;
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -171,20 +259,23 @@
 
     /* footer */
     .footer-wrapper {
-      position: relative;
-      z-index: 2;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
       height: 100vh;
       background: @voidBackground;
 
       .footer {
         margin: 0;
-        padding: 25vh 4% 8%;
+        padding: 20vh 4% 4%;
         color: #ff995e;
         font-size: 1.2em;
 
         > small {
           display: block;
-          margin-top: 8%;
+          margin-top: 4%;
           color: #feeb7f;
           font-size: 65%;
         }
@@ -192,4 +283,12 @@
     }
   }
 
+}
+
+.layout.scrolled {
+  .home.view {
+    .footer-wrapper {
+      z-index: 3;
+    }
+  }
 }
