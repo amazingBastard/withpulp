@@ -1,5 +1,5 @@
 <template name="contact">
-  <div class="middle aligned row contact header">
+  <div class="middle aligned contact header">
     <div class="column">
       <h2>
         <span class="label">{{content.label}}</span>
@@ -7,9 +7,13 @@
       <p><strong>{{content.intro}}</strong> {{content.hook}}</p>
     </div>
   </div>
-  <div class="six column row contact content">
-    {{#each content.blocks}}
-      {{> contactBlock}}
-    {{/each}}
+  <div class="contact content">
+    <div class="ui padded grid">
+      <div class="six column row">
+        {{#each content.blocks}}
+          {{> contactBlock}}
+        {{/each}}
+      </div>
+    </div>
   </div>
 </template>
