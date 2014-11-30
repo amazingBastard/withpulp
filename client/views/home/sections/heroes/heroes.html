@@ -1,5 +1,5 @@
 <template name="heroes">
-  <div class="middle aligned heroes header">
+  <div class="ui heroes page header grid">
     <div class="column">
       <h2>
         <span class="label">{{content.label}}</span>
@@ -8,7 +8,7 @@
     </div>
   </div>
   <div class="heroes content">
-    <div class="ui stackable padded grid">
+    <div class="ui stackable page grid">
       <div class="four column row">
         {{#each content.blocks}}
           {{> heroBlock}}
