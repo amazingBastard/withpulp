@@ -1,5 +1,5 @@
 <template name="mission">
-  <div class="middle aligned row mission header">
+  <div class="middle aligned mission header">
     <div class="column">
       <h2>
         <span class="label">{{content.label}}</span>
@@ -7,7 +7,7 @@
       <p><strong>{{content.intro}}</strong> {{content.hook}}</p>
     </div>
   </div>
-  <div class="one column row mission content">
+  <div class="mission content">
     {{#each content.blocks}}
       {{> missionBlock}}
     {{/each}}
