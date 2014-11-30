@@ -1,0 +1,56 @@
+@import 'variables';
+@import 'lib/elements';
+
+.footer-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background: @voidBackground;
+
+  .footer {
+    margin: 0;
+    padding: 20vh 4% 4%;
+    color: #ff995e;
+    font-size: 1.2em;
+
+    > small {
+      display: block;
+      margin-top: 4%;
+      color: #feeb7f;
+      font-size: 65%;
+    }
+  }
+}
+
+.layout .login-wrapper {
+    max-width: @loginFormWidth;
+    margin: 2em auto 0 auto;
+    color: @secondaryFontColor;
+
+    .at-form {
+        padding: 1em;
+        background-color: rgba(0, 0,0, 0.5);
+        border-radius: 0.4em;
+        .ui.form .at-input.field > label { color: @secondaryFontColor; }
+    }
+
+    .actions-wrapper {
+        max-width: @loginFormWidth / 2;
+        margin: 0 auto;
+    }
+
+    .hello {
+        margin-bottom: 1.8em;
+    }
+}
+
+.layout.scrolled {
+  .home.view {
+    .footer-wrapper {
+      z-index: 3;
+    }
+  }
+}

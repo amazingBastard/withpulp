@@ -1,59 +1,61 @@
 @import 'variables';
 @import 'lib/elements';
 
-
 .header-wrapper {
-    background-image: url('/images/background/background1.jpg');
-    height: 450px;
-    background-position: 100% 100%;
-    transition: height 0.8s;
-    color: @secondaryFontColor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background: @voidBackground;
 
-    .ui.header {
-        font-size: 3em;
-        padding-top: 160px;
+  .huge.ui.header {
+    padding: 40vh 4%;
+    font-size: 3em;
+    color: @primaryHeaderColor;
+    text-transform: uppercase;
 
-        > .sub.header {
-            color: @secondaryFontColorVariation;
-        }
+    > small {
+      display: block;
+      color: @secondaryHeaderColor;
+      font-size: 28%;
+      font-weight: normal;
+      text-transform: none;
     }
+  }
 
-    .resize.button {
-        margin-top: 40px;
-        font-size: 1.5em;
-
-        .icon {
-            color: @secondaryFontColor;
-        }
+  @media (min-width: @tabletWidth) {
+    .huge.ui.header {
+      font-size: 4em;
+      padding: 35vh 4%;
     }
-
-    a:hover {
-        color: @secondaryLinkHoverColor;
+  }
+  @media (min-width: @mediumDesktopWidth) {
+    .huge.ui.header {
+      font-size: 5em;
+      padding: 35vh 4%;
     }
+  }
 
-    &.active {
-        height: 900px;
+  @media (min-width: @largeDesktopWidth) {
+    .huge.ui.header {
+      font-size: 6em;
+      padding: 35vh 4%;
     }
-}
+  }
 
-.layout .login-wrapper {
-    max-width: @loginFormWidth;
-    margin: 2em auto 0 auto;
-    color: @secondaryFontColor;
-
-    .at-form {
-        padding: 1em;
-        background-color: rgba(0, 0,0, 0.5);
-        border-radius: 0.4em;
-        .ui.form .at-input.field > label { color: @secondaryFontColor; }
+  @media (max-width: @phoneWidth) {
+    .huge.ui.header {
+      font-size: 3em;
+      padding: 40vh 4%;
     }
+  }
 
-    .actions-wrapper {
-        max-width: @loginFormWidth / 2;
-        margin: 0 auto;
+  @media (min-width: @phoneWidth) and (max-width: @tabletWidth) {
+    .huge.ui.header {
+      font-size: 4em;
+      padding: 35vh 4%;
     }
-
-    .hello {
-        margin-bottom: 1.8em;
-    }
+  }
 }
