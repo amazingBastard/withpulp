@@ -7,7 +7,7 @@ Template.menu.rendered = function () {
       if (target.length) {
         Session.set('menuActive', false);
         Session.set('menuShow', false);
-        
+
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000);
@@ -18,3 +18,9 @@ Template.menu.rendered = function () {
     return true;
   });
 }
+
+Template['menu'].helpers({
+  animateClass: function () {
+    return Session.get('menuActive') ? 'fadeIn' : 'fadeOut';
+  }
+});
