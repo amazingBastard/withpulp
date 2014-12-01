@@ -1,11 +1,13 @@
 <template name="homeSection">
   <section class="home-section one column row">
     <div class="center aligned view-title column">
-      <h2 class="huge center aligned ui header">
-        {{#each header}}
-          <span>{{copy}}</span>
-        {{/each}}
-      </h2>
+      <div class="background image">
+        <h2 class="huge center aligned ui header">
+          {{#each header}}
+            <span>{{copy}}</span>
+          {{/each}}
+        </h2>
+      </div>
     </div>
     <div class="section-content column" id="{{template}}">
       {{> UI.dynamic template=template}}

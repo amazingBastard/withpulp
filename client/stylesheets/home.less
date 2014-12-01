@@ -488,13 +488,48 @@
       .home-section:nth-child(2) {
 
         .view-title {
-          background: @labelBackground;
+          background: @voidBackground;
+          padding: 0 !important;
 
-          .header {
-            color: @primaryHeaderColor;
+          .background.image {
+            background: url(/images/backgrounds/jupiter.png);
+            background-size: inherit;
+            background-position: 15% 75%;
+            background-repeat: no-repeat;
+            padding: 35vh 8% 50vh !important;
 
-            span:nth-child(2) {
-              color: @highlightFontColor;
+            .header {
+              color: @secondaryFontColor;
+              text-shadow: 1px 1px 1px #000;
+
+              span:nth-child(2) {
+                color: @secondaryHeaderColor;
+              }
+            }
+          }
+        }
+      }
+
+      .home-section:nth-child(3) {
+
+        .view-title {
+          background: @voidBackground;
+          padding: 0 !important;
+
+          .background.image {
+            background: url(/images/backgrounds/saturn.png);
+            background-size: inherit;
+            background-position: 40% 75%;
+            background-repeat: no-repeat;
+            padding: 35vh 8% 50vh !important;
+
+            .header {
+              color: @secondaryFontColor;
+              text-shadow: 1px 1px 1px #000;
+
+              span:nth-child(2) {
+                color: @secondaryHeaderColor;
+              }
             }
           }
         }
