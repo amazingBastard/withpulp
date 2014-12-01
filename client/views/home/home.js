@@ -4,9 +4,6 @@ Template.home.helpers({
   }
 });
 
-Template.home.events({
-});
-
 Template.home.rendered = function () {
   var $document = $(document),
   $element = $('.layout'),
@@ -14,8 +11,6 @@ Template.home.rendered = function () {
 
   $document.scroll(function() {
     if ($document.scrollTop() >= 800) {
-      // user scrolled 50 pixels or more;
-      // do stuff
       $element.addClass(scrolled);
     } else {
       $element.removeClass(scrolled);

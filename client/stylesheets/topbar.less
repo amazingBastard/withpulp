@@ -39,6 +39,31 @@
     }
   }
 
+  .ui.topbar.active {
+    background: none;
+
+    .title {
+
+      b {
+        color: @secondaryFontColor;
+
+        span {
+          color: rgba(255, 255, 255, 0.75);
+        }
+      }
+    }
+
+    .menu {
+
+      .icon {
+
+        i.fa {
+          color: @secondaryFontColor;
+        }
+      }
+    }
+  }
+
   @media (min-width: @tabletWidth) {
     .ui.topbar {
       background: transparent;

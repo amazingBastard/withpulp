@@ -1,5 +1,5 @@
 <template name="topbar">
-  <div class="ui fixed inverted main topbar menu">
+  <div class="ui fixed inverted main topbar menu {{activeClass}}">
     <div class="animated fadeIn title item">
       <b>
         <span>+</span>P
@@ -7,7 +7,7 @@
     </div>
     <div class="right menu">
       <a class="popup icon item">
-        <i class="fa fa-bars"></i>
+        <i class="fa {{iconToggle}}"></i>
       </a>
     </div>
   </div>
