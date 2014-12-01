@@ -1,3 +1,39 @@
 <template name="menu">
-  <p>menu</p>
+  <aside class="ui grid animated {{animateClass}} overlay menu">
+    <div class="three column navigation row">
+      <div class="column">
+        <h4>
+          <a href="#mission">Mission</a>
+        </h4>
+      </div>
+      <div class="column">
+        <h4>
+          <a href="#heroes">Heroes</a>
+        </h4>
+      </div>
+      <div class="column">
+        <h4>
+          <a href="#contact">Commlink</a>
+        </h4>
+      </div>
+    </div>
+
+    <div class="one column case-studies row">
+      <div class="column">
+        <h5 class="ui horizontal header divider">
+          Stuff we made
+        </h5>
+      </div>
+
+      <div class="navigation column">
+        <ul class="ui divided very relaxed list">
+          <li class="item">
+            <h4>
+              <a href="#">Ruby Blanc</a>
+            </h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
 </template>
