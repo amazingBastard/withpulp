@@ -17,22 +17,22 @@
         .view-title {
           margin: 0 !important;
           padding: 0 1em !important;
-          background: #3fb094;
+          background: @labelBackground;
           text-transform: uppercase;
           box-shadow: inset 0px 10px 10px -10px rgba(22, 22, 22, 0.8) ,
                       inset 0px -10px 10px -10px rgba(22, 22, 22, 0.8) !important;
 
           .header {
             padding: 1em 0;
-            color: @secondaryFontColor;
+            color: @primaryHeaderColor;
             font-family: 'Ubuntu', sans-serif;
 
             span {
               display: block;
             }
 
-            span:nth-child(2) {
-              color: #feeb7f;
+            span:nth-child(3) {
+              color: @highlightFontColor;
             }
           }
         }
@@ -474,14 +474,6 @@
         .view-title {
           box-shadow: 0px -10px 10px -10px rgba(22, 22, 22, 0.8) ,
           inset 0px -10px 10px -10px rgba(22, 22, 22, 0.8) !important;
-
-          span:nth-child(2) {
-            color: @secondaryFontColor;
-          }
-
-          span:nth-child(3) {
-            color: @secondaryHeaderColor;
-          }
         }
       }
 
@@ -499,8 +491,11 @@
             padding: 35vh 8% 50vh !important;
 
             .header {
-              color: @secondaryFontColor;
               text-shadow: 1px 1px 1px #000;
+
+              span {
+                color: @secondaryFontColor;
+              }
 
               span:nth-child(2) {
                 color: @secondaryHeaderColor;
@@ -528,7 +523,7 @@
               text-shadow: 1px 1px 1px #000;
 
               span:nth-child(2) {
-                color: @secondaryHeaderColor;
+                color: @primaryHeaderColor;
               }
             }
           }
