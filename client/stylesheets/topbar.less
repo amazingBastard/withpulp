@@ -5,6 +5,7 @@
 
   .ui.topbar {
     background: rgba(9, 5, 13, 0.95);
+    transition: all 1300ms ease-out;
 
     .title {
 
@@ -12,12 +13,14 @@
         display: none;
         color: @primaryIconColor;
         font-size: 1.5em;
+        transition: all 1300ms ease-out;
 
         span {
           position: relative;
           top: 2px;
           left: 3px;
           color: rgba(255, 153, 94, 0.75);
+          transition: all 1300ms ease-out;
         }
       }
     }
@@ -29,6 +32,7 @@
         i.fa {
           color: @primaryIconColor;
           font-size: 1.5em;
+          transition: all 1300ms ease-out;
         }
       }
 
@@ -41,14 +45,17 @@
 
   .ui.topbar.active {
     background: none;
+    transition: all 1300ms ease-out;
 
     .title {
 
       b {
         color: @secondaryFontColor;
+        transition: all 1300ms ease-out;
 
         span {
           color: rgba(255, 255, 255, 0.75);
+          transition: all 1300ms ease-out;
         }
       }
     }
@@ -59,6 +66,7 @@
 
         i.fa {
           color: @secondaryFontColor;
+          transition: all 1300ms ease-out;
         }
       }
     }
@@ -69,6 +77,7 @@
       background: transparent;
     }
   }
+
   @media (min-width: @mediumDesktopWidth) {
     .ui.topbar {
 
