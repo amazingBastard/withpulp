@@ -24,37 +24,49 @@
     }
   }
 
-  .ui.action.input {
-    width: 85%;
-    margin: 1em auto;
+  .wizard-step {
 
-    input {
-      height: 3em;
-      background: #FEEB7F;
-      border: 0;
-    }
+    .ui.action.input {
+      width: 85%;
+      margin: 1em auto;
 
-    .ui.button {
-      cursor: pointer;
-      height: 3em;
-      padding: 5px;
-      background: #FEEB7F;
-      border: 0;
-      box-shadow: none;
-
-      p {
-        margin: 0;
-        padding: 5px 15px;
+      input {
+        height: 3em;
         background: #FEEB7F;
-        border: 2px solid #3fb094;
-        border-radius: 4px;
-        color: #3fb094;
-        line-height: 1.5;
-        font-size: 1em;
-        font-weight: normal;
-        text-transform: none;
+        border: 0;
+      }
+
+      .ui.button {
+        cursor: pointer;
+        height: 3em;
+        padding: 5px;
+        background: #FEEB7F;
+        border: 0;
+        box-shadow: none;
+
+        p {
+          margin: 0;
+          padding: 5px 15px;
+          background: #FEEB7F;
+          border: 2px solid #3fb094;
+          border-radius: 4px;
+          color: #3fb094;
+          line-height: 1.5;
+          font-size: 1em;
+          font-weight: normal;
+          text-transform: none;
+        }
       }
     }
+
+    .error-notice {
+      color: #ED452F;
+    }
+  }
+
+  .info-input,
+  .action-input.switch {
+    display: none;
   }
 
   @media (min-width: @tabletWidth) {
