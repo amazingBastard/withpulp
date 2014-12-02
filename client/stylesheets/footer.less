@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'lib/elements';
 
-.footer-wrapper {
+.footer {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,9 +10,9 @@
   height: 100vh;
   background: @voidBackground;
 
-  .huge.ui.footer {
+  .huge.ui.header {
     margin: 0;
-    padding: 20vh 4% 4%;
+    padding: 15vh 4% 5vh;
     color: #ff995e;
     font-size: 1.2em;
 
@@ -24,62 +24,70 @@
     }
   }
 
+  .ui.action.input {
+    padding: 0 6%;
+
+    input {
+      background: #FEEB7F;
+      border: 0;
+    }
+
+    .ui.button {
+      cursor: pointer;
+      padding: 5px;
+      background: #FEEB7F;
+      border: 0;
+      box-shadow: none;
+
+      p {
+        margin: 0;
+        padding: 4.5px 10px;
+        background: #FEEB7F;
+        border: 2px solid #3fb094;
+        border-radius: 4px;
+        color: #3fb094;
+        font-size: 1em;
+        font-weight: normal;
+        text-transform: none;
+      }
+    }
+  }
+
   @media (min-width: @tabletWidth) {
-    .huge.ui.footer {
+    .huge.ui.header {
       font-size: 3em;
-      padding: 15vh 4%;
     }
   }
   @media (min-width: @mediumDesktopWidth) {
-    .huge.ui.footer {
+    .huge.ui.header {
       font-size: 3.5em;
     }
   }
 
   @media (min-width: @largeDesktopWidth) {
-    
+
   }
 
   @media (max-width: @phoneWidth) {
-    .huge.ui.footer {
+    .huge.ui.header {
       font-size: 1.2em;
-      padding: 20vh 4%;
+      padding: 15vh 4% 5vh;
     }
   }
 
   @media (min-width: @phoneWidth) and (max-width: @tabletWidth) {
-    .huge.ui.footer {
+    .huge.ui.header {
       font-size: 2.5em;
-      padding: 20vh 4%;
+      padding: 15vh 4% 5vh;
     }
   }
 }
 
-.layout .login-wrapper {
-    max-width: @loginFormWidth;
-    margin: 2em auto 0 auto;
-    color: @secondaryFontColor;
 
-    .at-form {
-        padding: 1em;
-        background-color: rgba(0, 0,0, 0.5);
-        border-radius: 0.4em;
-        .ui.form .at-input.field > label { color: @secondaryFontColor; }
-    }
-
-    .actions-wrapper {
-        max-width: @loginFormWidth / 2;
-        margin: 0 auto;
-    }
-
-    .hello {
-        margin-bottom: 1.8em;
-    }
-}
 
 .layout.scrolled {
   .home.view {
-    .footer-wrapper {
+    .footer {
       z-index: 3;
     }
   }

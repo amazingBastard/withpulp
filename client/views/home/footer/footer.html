@@ -1,28 +1,19 @@
 <template name="footer">
-  <footer class="center aligned {{isActive}} footer-wrapper">
-    <h1 class="huge center aligned ui footer">
+  <footer class="center aligned {{isActive}} footer">
+    <h1 class="huge center aligned ui header">
       Do you want more traffic?
       <small>
         Looks like a business in Astoria, New York<br/>needs our attention! Is this you?
       </small>
     </h1>
-    <button class="basic ui resize icon button"><i class="{{iconClass}} icon"></i></button>
-    {{#if showLogin}}
-    <div class="login-wrapper {{animateClass}} animated">
-      {{#if currentUser}}
-      <div class="actions-wrapper">
-        {{#if currentUser.username}}
-        <div class="hello">Hi {{currentUser.username}}!</div>
-        {{/if}}
-        <div class="ui fluid purple log-out button">
-          <i class="sign out icon"></i>
-          Log out
-        </div>
+    <div class="ui action input">
+      <input type="text" placeholder="you website url...">
+      <div class="ui button">
+        <p>Analyze</p>
       </div>
-      {{else}}
-      {{> atForm }}
-      {{/if}}
     </div>
+    {{#if showForm}}
+
     {{/if}}
   </footer>
 </template>

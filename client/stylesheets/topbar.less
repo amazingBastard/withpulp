@@ -8,6 +8,7 @@
     transition: all 1300ms ease-out;
 
     .title {
+      cursor: pointer;
 
       b {
         display: none;
@@ -25,9 +26,15 @@
       }
     }
 
+    a.title:hover,
+    a.title:focus {
+      background: transparent;
+    }
+
     .menu {
 
       .icon {
+        cursor:pointer;
 
         i.fa {
           color: @primaryIconColor;

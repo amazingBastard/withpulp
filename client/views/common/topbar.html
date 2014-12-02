@@ -1,10 +1,10 @@
 <template name="topbar">
   <div class="ui fixed inverted main topbar menu {{activeClass}}">
-    <div class="animated fadeIn title item">
+    <a href="{{pathFor 'home'}}" class="animated fadeIn title item">
       <b>
         <span>+</span>P
       </b>
-    </div>
+    </a>
     <div class="right menu">
       <a class="popup icon item">
         <i class="fa {{iconToggle}}"></i>
