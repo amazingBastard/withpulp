@@ -55,49 +55,45 @@ Fixtures.sections = [
         {
           name: 'Husam',
           title: 'Experience Ninja',
-          bg: '/heroes/husam/bg.png',
+          bg: '/images/heroes/husam/bg.png',
           quote: 'Who can see the future?',
           bold: 'Those who create it...',
           avatar: {
             desktop: '/images/heroes/husam/avatar_lg.png',
             mobile: '/images/heroes/husam/avatar_sm.png'
-          },
-          order: 0
+          }
         },
         {
           name: 'Isam',
           title: 'Software Sage',
-          bg: '/heroes/isam/bg.png',
+          bg: '/images/heroes/isam/bg.png',
           quote: 'I can\'t prevent the future.',
           bold: 'To me, it\'s already happening...',
           avatar: {
             desktop: '/images/heroes/isam/avatar_lg.png',
             mobile: '/images/heroes/isam/avatar_sm.png'
-          },
-          order: 1
+          }
         },
         {
           name: 'Damir',
           title: 'Software Wizard',
-          bg: '/heroes/damir/bg.png',
+          bg: '/images/heroes/damir/bg.png',
           quote: 'We\'re gonna show you the power...',
           bold: 'of the human race!',
           avatar: {
             desktop: '/images/heroes/damir/avatar_lg.png',
             mobile: '/images/heroes/damir/avatar_sm.png'
-          },
-          order: 2
+          }
         },
         {
           name: 'Sajjad',
           title: 'Reliability Warrior',
-          bg: '/heroes/sajjad/bg.png',
+          bg: '/images/heroes/sajjad/bg.png',
           quote: '...',
           avatar: {
             desktop: '/images/heroes/sajjad/avatar_lg.png',
             mobile: '/images/heroes/sajjad/avatar_sm.png'
-          },
-          order: 3
+          }
         }
       ]
     }

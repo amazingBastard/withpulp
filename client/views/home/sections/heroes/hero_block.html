@@ -1,6 +1,6 @@
 <template name="heroBlock">
   <section class="block column">
-    <div class="ui fluid card">
+    <div class="ui fluid card {{name}}">
       <div class="image">
         <img src="{{avatar.desktop}}" class="hidden-mobile avatar">
         <img src="{{avatar.mobile}}" class="visible-mobile avatar">
@@ -14,5 +14,6 @@
         </h2>
       </div>
     </div>
+    {{> heroModal}}
   </section>
 </template>

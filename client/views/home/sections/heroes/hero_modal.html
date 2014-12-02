@@ -1,0 +1,16 @@
+<template name="heroModal">
+  <aside class="ui fullscreen modal transition" id="{{name}}" style="background: url({{bg}});">
+    <div class="header">
+      <h3>
+        {{name}} <small>{{title}}</small>
+        <i class="close right icon"></i>
+      </h3>
+    </div>
+    <div class="content">
+      <p>
+        {{quote}}
+        <strong>{{bold}}</strong>
+      </p>
+    </div>
+  </aside>
+</template>
