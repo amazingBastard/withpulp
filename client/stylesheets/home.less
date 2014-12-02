@@ -604,3 +604,18 @@ body.ui.dimmed {
     }
   }
 }
+
+@media (max-width: @phoneWidth) {
+  body.ui.dimmed {
+    overflow: auto;
+
+    .ui.dimmer.page,
+    .ui.dimmer.page.visible.active {
+      display: none;
+
+      .ui.modal {
+        display: none;
+      }
+    }
+  }
+}

@@ -15,7 +15,7 @@
     z-index: 5;
 
     .navigation.row {
-      margin: 70px 0 0;
+      margin: 3.5rem 0 0;
 
       h4 {
         margin: 1em 0;
@@ -24,7 +24,16 @@
         text-align: center;
 
         a {
+          color: inherit;
           text-decoration: none;
+        }
+      }
+
+      h4:hover,
+      h4:focus {
+
+        a {
+          color:  @secondaryHeaderColor;
         }
       }
     }
@@ -44,14 +53,15 @@
         padding: 0;
 
         .ui.list {
-          margin: 10px auto;
+          margin: 1rem auto;
 
           .item {
             border: 0;
 
             h4 {
-              text-align: center;
               margin: 0;
+              text-align: center;
+              line-height: 1;
 
               a {
                 padding: 1em;
@@ -68,6 +78,98 @@
 
               a {
                 color: @primaryFontColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: @tabletWidth) {
+      .navigation.row {
+
+        h4 {
+          font-size: 1.5em;
+        }
+      }
+
+      .case-studies.row {
+
+        .header.divider {
+          font-size: 1em;
+        }
+
+        .header.divider::before,
+        .header.divider::after {
+          width: 35%;
+        }
+
+        .navigation {
+
+          .ui.list {
+
+            .item {
+
+              h4 {
+                font-size: 2em;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: @mediumDesktopWidth) {
+      .case-studies.row {
+
+        .header.divider::before,
+        .header.divider::after {
+          width: 40%;
+        }
+      }
+    }
+
+    @media (min-width: @largeDesktopWidth) {
+      .case-studies.row {
+
+        .header.divider::before,
+        .header.divider::after {
+          width: 45%;
+        }
+      }
+    }
+
+    @media (max-width: @phoneWidth) {
+
+    }
+
+    @media (min-width: @phoneWidth) and (max-width: @tabletWidth) {
+      .navigation.row {
+
+        h4 {
+          font-size: 1.5em;
+        }
+      }
+
+      .case-studies.row {
+
+        .header.divider {
+          font-size: 1em;
+        }
+
+        .header.divider::before,
+        .header.divider::after {
+          width: 35%;
+        }
+
+        .navigation {
+
+          .ui.list {
+
+            .item {
+
+              h4 {
+                font-size: 2em;
               }
             }
           }
