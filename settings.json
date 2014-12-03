@@ -2,5 +2,11 @@
     "orion-cli": {
         "profile": "default",
         "config": "private/orion-config.json"
+    },
+    "private": {
+      "MailChimp": {
+        "apiKey": "6380b6fe11ad3950670069ebd",
+        "listId": "441545"
+      }
     }
 }

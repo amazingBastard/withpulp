@@ -8,8 +8,11 @@ function loadFixture(fixtures, collection) {
 }
 
 Meteor.startup(function () {
-  //loadFixture(Fixtures['dummyFixture'], DummyCollection);
   if (Sections.find().count() === 0) {
     loadFixture(Fixtures['sections'], Sections);
+  }
+
+  if (Cases.find().count() === 0) {
+    loadFixture(Fixtures['cases'], Cases);
   }
 });

@@ -22,5 +22,8 @@ Template.menu.rendered = function () {
 Template['menu'].helpers({
   animateClass: function () {
     return Session.get('menuActive') ? 'fadeIn' : 'fadeOut';
+  },
+  cases: function () {
+    return Cases.find();
   }
 });

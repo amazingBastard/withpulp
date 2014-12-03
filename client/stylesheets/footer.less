@@ -13,60 +13,62 @@
   .huge.ui.header {
     margin: 0;
     padding: 15vh 1em 5vh;
-    color: #ff995e;
+    color: @primaryHeaderColor;
     font-size: 1.5em;
 
     > small {
       display: block;
       margin-top: 1em;
-      color: #feeb7f;
+      color: @secondaryHeaderColor;
       font-size: 60%;
     }
   }
 
-  .wizard-step {
+  .ui.action.input {
+    width: 85%;
+    margin: 1em auto;
 
-    .ui.action.input {
-      width: 85%;
-      margin: 1em auto;
-
-      input {
-        height: 3em;
-        background: #FEEB7F;
-        border: 0;
-      }
-
-      .ui.button {
-        cursor: pointer;
-        height: 3em;
-        padding: 5px;
-        background: #FEEB7F;
-        border: 0;
-        box-shadow: none;
-
-        p {
-          margin: 0;
-          padding: 5px 15px;
-          background: #FEEB7F;
-          border: 2px solid #3fb094;
-          border-radius: 4px;
-          color: #3fb094;
-          line-height: 1.5;
-          font-size: 1em;
-          font-weight: normal;
-          text-transform: none;
-        }
-      }
+    p {
+      margin: 0 0 1em;
+      color: @secondaryFontColorVariation;
     }
 
-    .error-notice {
-      color: #ED452F;
+    input {
+      height: 3em;
+      background: @labelBackground;
+      border: 0;
+      border-radius: 4px;
     }
-  }
 
-  .info-input,
-  .action-input.switch {
-    display: none;
+    button {
+      position: relative;
+      bottom: 3em;
+      float: right;
+      cursor: pointer;
+      margin: 5px;
+      padding: 5px 20px;
+      background: @labelBackground;
+      border: 2px solid @highlightFontColor;
+      border-radius: 4px;
+      color: @highlightFontColor;
+      line-height: 1.5;
+      font-size: 1em;
+      font-weight: normal;
+      text-transform: none;
+    }
+
+    button:hover,
+    button:focus {
+      background: @highlightFontColor;
+      color: @secondaryHeaderColor;
+    }
+
+    button[disabled] {
+      opacity: 0.5;
+      cursor: not-allowed;
+      background: @labelBackground;
+      color: @highlightFontColor;
+    }
   }
 
   @media (min-width: @tabletWidth) {
@@ -102,6 +104,13 @@
   @media (max-width: @phoneWidth) {
     .huge.ui.header {
       font-size: 1.5em;
+    }
+
+    .ui.action.input {
+
+      button {
+        padding: 5px;
+      }
     }
   }
 
