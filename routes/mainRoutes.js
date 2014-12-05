@@ -29,7 +29,7 @@ Router.route('/cases/:_id', {
   },
   action: function() {
     if (this.ready())
-      this.render('case');
+      this.render('case')
     else
       this.render('loading');
   }

@@ -3,6 +3,7 @@ Fixtures = typeof Fixtures !== "undefined" ? Fixtures : {};
 
 Fixtures.cases = [
   {
+    client: 'Ruby Blanc',
     class: 'intro-effect-push',
     jumbo: '/images/cases/rubyblanc/intro.png',
     logo: '/images/cases/rubyblanc/logo.png',

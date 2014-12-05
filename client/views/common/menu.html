@@ -27,11 +27,13 @@
 
       <div class="navigation column">
         <ul class="ui divided very relaxed list">
-          <li class="item">
-            <h4>
-              <a href="{{pathFor 'case'}}">Ruby Blanc</a>
-            </h4>
-          </li>
+          {{#each cases}}
+            <li class="item">
+              <h4>
+                <a href="{{pathFor 'case' _id=this._id}}">{{client}}</a>
+              </h4>
+            </li>
+          {{/each}}
         </ul>
       </div>
     </div>
