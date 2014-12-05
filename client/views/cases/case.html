@@ -1,3 +1,15 @@
 <template name="case">
-  <p>{{title}}</p>
+  <div class="case view">
+    <header class="center aligned header-wrapper">
+      <img src="{{logo}}" />
+      <h1 class="huge center aligned ui header">
+        {{title}}
+      </h1>
+    </header>
+    <main class="ui stackable case-main grid">
+      {{#each sections}}
+        {{> caseSection}}
+      {{/each}}
+    </main>
+  </div>
 </template>
