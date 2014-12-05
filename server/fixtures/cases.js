@@ -4,7 +4,7 @@ Fixtures = typeof Fixtures !== "undefined" ? Fixtures : {};
 Fixtures.cases = [
   {
     client: 'Ruby Blanc',
-    class: 'intro-effect-push',
+    effect: 'effect-push',
     jumbo: '/images/cases/rubyblanc/intro.png',
     logo: '/images/cases/rubyblanc/ruby.png',
     title: 'Bringing a Powerhouse Since 1978 Online',
@@ -92,7 +92,7 @@ Fixtures.cases = [
             text: 'As the products were the main driver for customer engagement, we gave them significant visual hierarchy on the UI. First, we made sure every product photo, title and description were vetted through research. This way, the photos would speak for themselves. Then, we tested the photos in multiple aspect ratios and column layouts to find the perfect blend of usability and aesthetic. We landed on a 4-column grid with 1:1 aspect ratios. We placed the photos on a soft gray background to bring them to life.',
             images: [
               {
-                path: '/images/cases/rubyblanc/photogrid.jpg'
+                path: '/images/cases/rubyblanc/photogrid.png'
               }
             ]
           },

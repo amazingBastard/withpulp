@@ -13,6 +13,15 @@
             <img src="{{path}}" />
           </div>
         {{/each}}
+        {{#each lists}}
+          <div class="ui list">
+            <ul>
+              {{#each list}}
+                <li>{{item}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/each}}
       {{/each}}
     </div>
   </section>
