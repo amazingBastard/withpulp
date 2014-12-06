@@ -1,4 +1,4 @@
-Template.topbar.created = function() {
+Template.topbar.rendered = function() {
   Session.set('menuActive', false);
   Session.set('menuShow', false);
 }

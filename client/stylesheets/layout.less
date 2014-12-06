@@ -30,9 +30,17 @@ a {
   }
 }
 
-.site-wrapper {
-  margin: 0 auto;
-  max-width: @largeDesktopWidth;
+.ui.void.button {
+  background: transparent;
+  color: @secondaryFontColor;
+  border: 1px solid @contentBackground;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: @highlightFontColor;
+    border: 1px solid @highlightFontColor;
+  }
 }
 
 .ui.dimmer {

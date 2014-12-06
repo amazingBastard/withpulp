@@ -1,5 +1,5 @@
 <template name="case">
-  <div class="case view {{animation}}">
+  <div class="case view {{effect}}">
     <header class="center aligned header-wrapper" style="background: url({{jumbo}});">
       <img class="logo" src="{{logo}}" />
       <h1 class="huge center aligned ui header">
@@ -11,5 +11,17 @@
         {{> caseSection}}
       {{/each}}
     </article>
+    <footer class="center aligned footer">
+      <!--
+      <h1 class="huge center aligned ui header">
+        <small></small>
+      </h1>
+      -->
+      <div class="ui navigation">
+        <p class="actions">
+          <a href="{{pathFor 'home'}}" class="ui void button">Take me home</a>
+        </p>
+      </div>
+    </footer>
   </div>
 </template>

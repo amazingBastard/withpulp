@@ -22,7 +22,7 @@ Router.route('/', function () {
 Router.route('/cases/:_id', {
   name: 'case',
   data: function() {
-    return Cases.findOne(this.params._id);
+    return Cases.findOne({_id: this.params._id});
   },
   waitOn: function() {
     return Meteor.subscribe('cases');

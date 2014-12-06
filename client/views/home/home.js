@@ -5,6 +5,8 @@ Template.home.helpers({
 });
 
 Template.home.rendered = function () {
+  $('.topbar').show();
+
   var $document = $(document),
   $element = $('.layout'),
   scrolled = 'scrolled';

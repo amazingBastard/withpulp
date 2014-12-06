@@ -38,7 +38,7 @@
     .case-main {
       position: relative;
       z-index: 4;
-      margin: 0;
+      margin: 0 0 100vh;
       background: @contentBackground;
 
       .case-section {
@@ -72,6 +72,32 @@
               padding-left: 2em;
             }
           }
+        }
+      }
+    }
+
+    .footer {
+
+      .ui.navigation {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0 auto;
+        padding: 0 !important;
+        height: 50vh;
+        width: 100%;
+        background: url(@caseBackgroundAstronaut);
+        background-size: inherit;
+        background-position: 50% 25%;
+        background-repeat: no-repeat;
+
+        .actions {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          margin: 2em auto;
         }
       }
     }
