@@ -81,7 +81,7 @@
         .column {
 
           .ui.header {
-            margin-top: 10em;
+            padding-top: 10em;
           }
         }
       }
@@ -91,13 +91,14 @@
         .column {
 
           .text:last-child {
-            margin-bottom: 5em;
+            padding-bottom: 5em;
           }
         }
       }
     }
 
     .footer {
+      opacity: 0;
 
       .ui.navigation {
         display: block;
@@ -175,6 +176,13 @@
     .case-main {
       -webkit-transform: translateY(0);
       transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .case.view.effect-push.reveal {
+
+    .footer {
       opacity: 1;
     }
   }
