@@ -3,10 +3,15 @@
         "profile": "default",
         "config": "private/orion-config.json"
     },
+    "public" : {
+      "ga": {
+        "account":"UA-41596036-1"
+      }
+    },
     "private": {
       "MailChimp": {
-        "apiKey": "6380b6fe11ad3950670069ebd",
-        "listId": "441545"
+        "apiKey": "d9b184ad30420c503d4a6c112908b7ba-us9",
+        "listId": "a676b7723c"
       }
     }
 }
