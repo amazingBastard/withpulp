@@ -6,6 +6,7 @@
   .case.view {
     padding: 0;
     overflow: hidden;
+    background: @contentBackground;
 
     .header-wrapper {
       position: absolute;
@@ -33,6 +34,51 @@
         color: @primaryFontColor;
         font-size: 2em;
         text-transform: none;
+      }
+    }
+
+    @media (min-width: @tabletWidth) {
+      .header-wrapper {
+
+        .huge.ui.header {
+          font-size: 3em;
+        }
+      }
+    }
+
+    @media (min-width: @mediumDesktopWidth) {
+      .header-wrapper {
+
+        .huge.ui.header {
+          font-size: 3.5em;
+        }
+      }
+    }
+
+    @media (min-width: @largeDesktopWidth) {
+      .header-wrapper {
+
+        .huge.ui.header {
+          font-size: 4em;
+        }
+      }
+    }
+
+    @media (max-width: @phoneWidth) {
+      .header-wrapper {
+
+        .huge.ui.header {
+          font-size: 2em;
+        }
+      }
+    }
+
+    @media (min-width: @phoneWidth) and (max-width: @tabletWidth) {
+      .header-wrapper {
+
+        .huge.ui.header {
+          font-size: 2.5em;
+        }
       }
     }
 
@@ -71,6 +117,106 @@
 
             ul {
               padding-left: 2em;
+            }
+          }
+        }
+      }
+
+      @media (min-width: @tabletWidth) {
+        .case-section {
+
+          .column {
+
+            .ui.header {
+              font-size: 1.5em;
+            }
+
+            .ui.text {
+              font-size: 1.25em;
+            }
+
+            .ui.list {
+              font-size: 1.25em;
+            }
+          }
+        }
+      }
+
+      @media (min-width: @mediumDesktopWidth) {
+        .case-section {
+
+          .column {
+
+            .ui.header {
+              font-size: 2em;
+            }
+
+            .ui.text {
+              font-size: 1.5em;
+            }
+
+            .ui.list {
+              font-size: 1.5em;
+            }
+          }
+        }
+      }
+
+      @media (min-width: @largeDesktopWidth) {
+        .case-section {
+
+          .column {
+
+            .ui.header {
+              font-size: 2.5em;
+            }
+
+            .ui.text {
+              font-size: 2em;
+            }
+
+            .ui.list {
+              font-size: 2em;
+            }
+          }
+        }
+      }
+
+      @media (max-width: @phoneWidth) {
+        .case-section {
+
+          .column {
+
+            .ui.header {
+              font-size: 1.5em;
+            }
+
+            .ui.text {
+              font-size: 1em;
+            }
+
+            .ui.list {
+              font-size: 1em;
+            }
+          }
+        }
+      }
+
+      @media (min-width: @phoneWidth) and (max-width: @tabletWidth) {
+        .case-section {
+
+          .column {
+
+            .ui.header {
+              font-size: 1.5em;
+            }
+
+            .ui.text {
+              font-size: 1.25em;
+            }
+
+            .ui.list {
+              font-size: 1.25em;
             }
           }
         }
