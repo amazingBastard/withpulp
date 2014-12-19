@@ -1,22 +1,23 @@
 {
   "servers": [
     {
-      "host": "hostname",
-      "username": "root",
+      "host": "Parable",
+      "username": "damir",
       "password": "password"
     }
   ],
 
-  "setupMongo": __setupMongo__,
-  "setupNode": __setupNode__,
+  "setupMongo": true,
+  "setupNode": false,
   "nodeVersion": "0.10.31",
-  "setupPhantom": false,
+  "setupPhantom": true,
 
-  "appName": "__appName__",
-  "app": "__appPath__",
+  "appName": "withpulp",
+  "app": "~/Projects/mtr-wp",
 
   "env": {
-    "ROOT_URL": "__rootUrl__"
+    "PORT": 80,
+    "ROOT_URL": "http://withpulp.com"
   },
 
   "deployCheckWaitTime": 15
